@@ -1,5 +1,17 @@
-<form action="/names" method="post">
-  <input type="text" name="p1" placeholder = "name: player 1">
-  <input type="text" name="p2" placeholder = "name: player 2">
-  <input type="submit" value="Submit">
-</form>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Battle</title>
+   <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css"/>
+   <%# This will ensure the link to style.css will be correct wherever your app is located. source: https://stackoverflow.com/questions/12340335/loading-stylesheets-in-sinatra %>
+  </head>
+  <body>
+    <img src="https://bit.ly/30qSgeJ" id="battle_img">
+    <h2><strong>Enter names:</strong></h2>
+    <form action="/names" id="register-players" method="post">
+    <input type="text" name="p1" placeholder="name: player 1">
+    <input type="text" name="p2" placeholder="name: player 2">
+    <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,3 +1,14 @@
-<%=@game.player_1.name%> attacked <%=@game.player_2.name%>
 
-<a href="/play">OK</a>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Attack</title>
+    <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css"/>
+    <%# This will ensure the link to style.css will be correct wherever your app is located. source: https://stackoverflow.com/questions/12340335/loading-stylesheets-in-sinatra %>
+  </head>
+
+  <body>
+    <h1><%=@game.player_1.name.capitalize%> attacked <%=@game.player_2.name.capitalize%></h1>
+    <a href="/play">OK</a>
+  </body>
+</html>
