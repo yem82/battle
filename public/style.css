@@ -1,14 +1,30 @@
 body {
     text-align: center;
     background-color:  rgb(31, 89, 112);
-    width: 768px;
     margin: auto;
 }
 
-#battle_img {
-    margin-top: 50px
-
+#battle {
+    margin-top: 250px;
 }
+
+#play_h1 {
+   line-height: 13em;
+}
+
+#play_h2 {
+    margin-top: -5em;
+}
+
+#attack_h1 {
+    line-height: 10em;
+ }
+ 
+ #attack_h2 {
+     margin-top: -5em;
+ }
+
+
 
 
 

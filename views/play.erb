@@ -1,10 +1,11 @@
 <head>
-<title>Battle!</title>
+<title>Battle</title>
 <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-<h1><%=@game.player_1.name.capitalize%> vs <%=@game.player_2.name.capitalize%></h1>
-<a href="/attack">Attack</a>
-<h2><%= @game.player_2.name.capitalize %>: <%= @game.player_2.hit_points %></h2>
+  <h1 id="play_h1"><%=@game.player_1.name.capitalize%> vs <%=@game.player_2.name.capitalize%></h1>
+  <h2 id="play_h2"><%= @game.player_1.name.capitalize %>: <%= @game.player_1.hit_points %> HP
+  |  <%= @game.player_2.name.capitalize %>: <%= @game.player_2.hit_points %> HP
+  <p><a href="/attack">Attack</a> </p></h2>
 </body>
